@@ -220,7 +220,7 @@ function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
   var str = numero + '';
-  var digitos = str.legth;
+  var digitos = str.length;
   if ( digitos === 3 ){
     return true;
   } else { 
@@ -232,7 +232,14 @@ function doWhile(numero) {
   //Retornar el valor final.
   //Usar el bucle do ... while.
 
+  var acc = 1;
+  var resultado = numero;
   
+  while (acc < 9) {
+      resultado = resultado + 5;
+      acc = acc + 1;
+  }
+return resultado
 }
 
 
