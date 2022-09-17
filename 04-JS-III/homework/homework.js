@@ -270,6 +270,23 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+  
+  var nuevoarray = []
+  var i = 0
+
+  do {numero = numero + 2 
+    i++
+    nuevoarray.push (numero)
+    if( numero === i ){
+      return "Se interrumpió la ejecución"
+    }
+  } while (i < 10 )
+
+return nuevoarray
+
+
+
+
 }
 
 
@@ -280,6 +297,18 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+
+var nuevoarray = []
+var i = 0
+
+while ( i < 10 ){
+  i++;
+  if (i === 4)
+  continue  
+  numero += 2;
+  nuevoarray.push (numero);
+}
+return nuevoarray
 }
 
 
