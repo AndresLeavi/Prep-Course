@@ -7,15 +7,15 @@ img{
 }
 
 #thirdDiv{
-    height: 600 px;
-    width: 500 px; 
+    height: 600px;
+    width: 500px; 
     background-color:darkolivegreen;
-    padding: 50 px;
+    padding:50px;
     border: 5px solid darkseagreen ;
 
 }
 
 #spanid{
     font-size: 18px;
-    margin: 50 px;  
+    margin: 50px;  
 }
