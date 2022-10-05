@@ -3,5 +3,76 @@ Instrucciones
 En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes 
 conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a 
 descubrir rápidamente cualquier agujero en tu comprensión.
+
 for
+
+Dentro de JS vamos a tener dos grandes grupos, las expresiones (expressions) y las declaraciones (stataments). Las
+primeras se explican en el apartado siguiente, las segundas son aquellas que realizan una accion, como por ejemplo
+los condionales if, if else, else, etc, cuando creamos una variable, la declaracion de una funcion, etc.
+
+En el archivo de texto del Homework JS I hablamos de las funciones, sus argumentos y del retorno de las mismas. En ciertas
+situaciones queremos que dichas funciones evaluen expresiones, las cuales pueden ser aritmeticas, logicas, strings, 
+primarias, de asignacion, etc. PERO que dicha evaluacion sea dato por dato, hasta que nos retorne lo que estamos buscando.
+
+Para poder realizar esta tarea de iteraciones, es decir, que se repite una y otra vez hasta termina su funcionamiento,
+utilizamos un bucle for, en el cual se define:
+
+Una variable i 
+Una condicion 
+Un incremento
+
+Si nosotros queremos por ejemplo obtener una grilla con todos los numeros del 1 al 1000, en vez de estar colocando
+uno por uno, le decimos al bucle for que lo haga por nosotros.
+
+for (var = i ; i <= 1000 ; i++) {
+    console.log(i);
+}
+
+
+
 &&, ||, !
+
+Los simbolos que podemos apreciar arriba son operadores logicos y justamente se utilizan para comparar expresiones. 
+
+Pero ¿Que son las expresiones? En JS las expresiones son aquel codigo que al escribirlo se convierte en algo, es decir, 
+es evaluado a un valor. Por ejemplo:
+
+> 1 + 1
+>2
+
+Al sumar los datos numericos, podemos ver que el interprete nos retorna el resultado, y al hacerlo nos esta indicando
+que estamos en presencia de expresiones. Cabe destacar, que el operador suma es una funcion, al igual que todos los 
+operadores aritmeticos y logicos. 
+
+Los operadores logicos son como de la flia de los operadores aritmeticos (+ - / % ) y de los operadores de comparacion
+( < <= > >=), que se utilizan, valga la redundancia para comparar dos expresiones. 
+
+Ahora si queremos comparar dos expresiones, que a su vez estan siendo comparadas, utilizamos los operadores logicos. Por
+ejemplo
+
+> (100 > 10 && 10 > 1)
+
+Aqui podemos ver que tenemos el operador de comparacion > y el operador logico  &&. 
+
+Tenemos que tener en cuenta que los operadores logicos siempre retornan un valor booleano (T o F). En la siguiente table
+podran apreciar los resultados que tendremos frente a distintas comparaciones.
+
+
+expression 1 && expression 2 === Dato Booleano
+T                   T        === T                  sOLO DEVOLVERTA TRUE SI AMBAS EXPRESIONES SON T 
+T                   F        === F 
+F                   T        === F 
+F                   F        === F       
+
+expression 1 || expression 2 === Dato Booleano
+T                   T        === T                  sOLO DEVOLVERTA FALSE SI AMBAS EXPRESIONES SON F 
+T                   F        === T 
+F                   T        === T  
+F                   F        === F                 
+
+OPERADOR LOGICO ! (NO), DEVUELVO LO APUESTO AL VALOR Booleano
+
+>!True              >!False
+>False              >True
+
+
