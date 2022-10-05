@@ -3,8 +3,110 @@ Instrucciones
 En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes 
 conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a 
 descubrir rápidamente cualquier agujero en tu comprensión.
+
 Variables
+
+"Es una forma de almacenar el valor de algo". Puede crearse utilitizando la palabra clave* var, luego un espacio y por 
+ultimo el nombre que le daremos dicha Variable. 
+
+*(Key Word = palabra especial que utiliza el lenguaje de programacion para indicar algo) 
+
+En analogia a lo mencionado podriamos decir que una variable es como el documento de identidad de una persona. El DNI 
+fisico, es decir, el carton que contiene nuestra foto y datos, representa la variable, la cual contiene un valor. Dicho
+valor vendrian a ser nombre, apellido, edad, nacionalidad, etc.
+
+En un pais todas las personas son representadas a traves de un Docomento de Indentidad Unico, es decir, son representadas
+a traves de una variable. Por ende existen personas como variables en el mundo, cada unos con valores y datos distintos, 
+respectivamente.  
+
+Ahora, en Javascript una variable puede ser modificada, al igual que nosotros podemos modificar nuestro DNI, cambiando
+nuestro nombre, apellido o genero. 
+
+Pero....el DNI no es la unica variable con la que nos podemos identificar, tambien tenemos un pasaporte, una partida de 
+nacimiento, ciudadania, etc. Sin embargo, todas ellas representan a una unica persona. Por ello una variable puede 
+declararse bajo distintos nombres, los cuales serian lets y const. Estas ultimas  representan al igual que var,  Keys words  
+del lenguaje de programacion. 
+
+
 Strings
+
+"Se definen como cadenas de letras". Son un tipo de dato dentro del lenguaje de programacion. 
+
+Sigamos con la analogia anterior.... dijimos que nuestro DNI es una variable, y adentro, como toda variable, almacena el
+valor de algo. Dicho valor vendrian a ser nuestros datos (nombre, apellido, direccion, genero, etc.)
+
+Pero...¿Esos datos son todos iguales? No. Los valores que se representan mediante palabras, son lo que en programacion
+denominamos un STRING, es decir, una cadena de letras; todos aquellos valores que son numericos, en el lenguaje de 
+progrmacion serian los datos de tipo NUMBERS. 
+
+
 Funciones (argumentos, return)
+
+
+Ahora que definimos lo que son las variables, y el tipo de dato que puede ser su valor, vamos a ver como podemos calcular,
+cambiar o hacer algo con las mismas. Para todo lo mencionado con anterioridad utilizamos las funciones, las cuales 
+presentan varias anatomias, pero sobre la que mas conocimiento poseo hasta el momento es la siguiente:
+
+fuction name (){}
+
+Aqui podemos destacar:
+
+Key word: fuction
+name: aqui colocaremos el nombre de la funcion, siempre tratando de hacer una referencia a lo que hace la misma, siendo
+      lo mas redundante posible y sintético posible. 
+(): entre los parentesis o brakets colocaremos los argumentos de nuestra funcion (*hablaremos en un instante sobre ello).
+[]: entre los corchetes o square brakets colocaremos nuestro code block, es decir, nuestro codigo de bloque, todas aquellas
+    Introducción que querramos darle a la funcion para que realize, para que cumpla con el proposito para el cual fue 
+    creada la misma. 
+
+*Arguments = argumentos : Vendrian a ser los valores en los que va a variar mi funcion,valga la redundancia. Son aquellos
+                          datos que ingresaran en la funcion, la cual los analizara para cumplir su cometido. Una analogia 
+                          a ello seria realizar una torta. En nuestra procesadora automatica  (lo que representa a nuestra
+                          funcion) colocamos harina, huevo, manteca, etc (nuestros argumentos) y el artefacto cumplira la 
+                          funcion de integrarlos. Como resultado nos devolvera  o RETORNARÁ (RETURN) una mezcla que puede 
+                          ser llevada al horno.
+
+Return = retorno : como mencionamos en el apartado de argumentos, el retur o retorno es lo que la funcion nos devuelve
+                   luego de haberla declarado y haberle pasado los argumentos. En la analogia de la torta, nosotros le 
+                   damos a nuestra procesadora (funcion) los ingredientes (argumentos) y la misma nos devuelve (retorna)
+                   una mezcla integrada, es decir, lo que nosotros esperabamos. 
+
+
 Declaraciones if
+
+Hasta aca todo muy lindo, pero mencionamos que adentro de los corchetes o square brakets colocabamos un bloque de codigo..
+¿Para que sirve? El bloque de codigo contiene todas las intrucciones internas que hacen que la funcion cumpla su cometido.
+En la analigia de la Torta, el bloque de codigo seriamos nosotros los operadores, que colocamos el batidor o mezclador 
+que necesitamos, las cantidades justas de ingredientes, la velocidad de la procesadora, etc, para asi obtener una buena torta, 
+lo que se traduce en JS tendriamos como una funcion eficiente y que cumple con el rol por la que fue creada. 
+
+Sin embargo, toda receta tiene pasos a seguir y un orden especifico que cumplir... se colocan los huevos y se bate, luego 
+el azucar y se bate..... Podriamos considerar que hay un control en el procedimiento para hacer una torta. Bueno, de igual 
+manera las funciones (fuction) tiene un contro del flujo. Dicho control de flujo se establece a traves de los operadores 
+de comparaciones if, else, else if, Do While, etc. 
+
+If funciona de la siguiente manera:
+
+Si lo que esta sucediendo es TRUE (dato booleano explicado más abajo) la funcion nos devuelve o retorna algo (si pongo
+bien los ingredientes, en el orden correcto, la mezcla sale bien).
+
+Si coloco los ingredientes en el orden incorrecto, la mezcla obtenida sale mal, por lo tanto tenemos que parar. Ésta 
+situacion en la que paramos en JS se realiza a traves de else, el cual es una key word que nos dice, si el orden de los
+ingredientes no esta siendo el correcto debemos frenar aca y decitrle al usuario "Hermano/a frena aca porque la torta te
+va a quedar horrible".
+
+De esta manera dentro de una funcion podemos ir colocando puntos de control que van a permitir que nuestra funcion realice
+su cometido de forma correcta. 
+
+
+
 Valores booleanos (true, false)
+
+Mencionamos los datos de tipo STRING y NUMBERS. Otro tipo de datos son los BOOLEANOS, los cuales en JS solo responden a 
+las keys words TRUE O FALSE. Si consideramos la analogia del DNI, y solo nos limitamos a dos generos, podriamos decir que 
+true seria el genero Femenino y False el genero Masculino. Nuevamente, limitandonos a dos generos, la variable DNI solo
+puede almacenar alguna de las dos posibilidades booleanas, Femenino o Masculino, TRUE o FALSE, respectivamente. 
+
+Con la analogia de la torta, TRUE seria una receta que se hizo al pie de la letra, mientras que FALSE seria una recta que
+se siguio aleatoriamente. O tambien podria ser torta bien hecha: true, torta mal hecha: false, solo dos posibles 
+resultados. 
