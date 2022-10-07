@@ -71,7 +71,7 @@ cb (array[i])
 
 //OTRO OPCIÓN 
 
-// array.forEach(function (a){
+// array.forEach(function (a){   //a es cada elemento del array
 //   cb (a)
 // })
 
