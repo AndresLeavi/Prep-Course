@@ -180,7 +180,15 @@ function buscoInterseccion(arreglo1, arreglo2){
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
   //Escribe tu código aquí  
 
+//  0  1  2
 
+// [4, 3, 2]
+//     i
+
+// [1, 3, 4]
+//     j
+
+//[4, 3] 
   nuevoarray = [];
 
   for (let i = 0; i < arreglo1.length; i++) {
